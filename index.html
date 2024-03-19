@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha512-BrvVYNhKh6yST24E5DY/LopLO5d+8KYmIXyrpBIJ2PK+CyyJw/cLSG/BfJomWLC1IblNrmiJWGlrGueKLd/Ekw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka">
+    
+
+    <title>Luka K. | Creative Portfolio</title>
+</head>
+
+
+<body onload="dragToWindows()">
+
+<!-- ====================== Desktop Icons ====================== -->
+<div class="Desktop-Left">
+    <div class="desktop-icons" onclick="windowDisplay('AboutWindow', true)">
+        <img src="images/computer.png" alt="Desktop Icon" class="icon" onmouseover="this.src='images/computer2.png';" onmouseout="this.src='images/computer.png';" />
+        <div class="icon-text"><p>About</p></div>
+    </div>
+    
+    <div class="desktop-icons" onclick="windowDisplay('TestWindow', true)">
+        <img src="images/folder.png" alt="Test Icon" class="icon" onmouseover="this.src='images/folder2.png';" onmouseout="this.src='images/folder.png';"/>
+        <div class="icon-text"><p>Projects</p></div>
+    </div>
+
+    <div class="desktop-icons" onclick="windowDisplay('', true)">
+      <img src="images/gallery.png" alt="gallery Icon" class="icon" />
+      <div class="icon-text"><p>Gallery</p></div>
+    </div>
+        
+    <div class="desktop-icons" onclick="windowDisplay('epicWindow', true)">
+        <img src="images/music.png" alt="epic Icon" class="icon" />
+        <div class="icon-text"><p>Music</p></div>
+    </div>
+        
+    <div class="desktop-icons" onclick="windowDisplay('language', true)">
+        <img src="images/msg.png" alt="epic Icon" class="icon" />
+        <div class="icon-text"><p>Languages</p></div>
+    </div>
+
+    <div class="desktop-icons" onclick="windowDisplay('', true)">
+      <img src="images/note.png" alt="epic Icon" class="icon" />
+      <div class="icon-text"><p>Blog</p></div>
+    </div>
+    
+</div>
+
+<div class="Desktop-Left2">
+
+  
+</div>
+
+<!-- ====================== Languages / Messenger ====================== -->
+<div class="window textbox" id="language">
+    <div class="title-bar">
+    <i class="fa-solid fa-message"></i>
+    <p>Messenger</p>
+    </div>
+
+    <div class="content">
+    <div id="messenger">
+      <div class="message" style="margin-bottom:0.75em;">
+        <img class="pfp" style="margin-right: 0.5em;" src="https://via.placeholder.com/40" alt="pfp1">
+        <span>Hello there! 🇬🇧</span>
+      </div>
+
+      <div class="message" style="margin-left:2em; margin-bottom:0.75em;">
+        <img class="pfp" style="margin-left: 0.5em;" src="https://via.placeholder.com/40" alt="pfp2">
+        <span style="order: -1;">Привет! Я говорю по-русски! 🇷🇺</span>
+      </div>
+
+      <div class="message">
+        <img class="pfp" style="margin-right: 0.5em;" src="https://via.placeholder.com/40" alt="pfp1">
+        <span>日本語を勉強している 🇯🇵</span>
+      </div>
+    </div>
+
+      <div class="send-message">
+          <input type="text" placeholder="psst hello there!">
+        <i class="fa-solid fa-paper-plane"></i>
+    </div>
+
+
+  </div>
+
+    <div class="close-button" onclick="windowDisplay('language', false)">
+        x
+    </div>
+</div>
+<!-- ====================== About Me ====================== -->
+<div class="window textbox" id="AboutWindow">
+    <div class="title-bar">
+    <i class="fa-solid fa-user"></i>
+    <p>About Me</p>
+    </div>
+
+    <div class="content" id="aboutme">
+        <img src="https://placehold.co/250" alt="Your Image" style="margin-right: 1.25em;">
+        <div>
+          <h1>Hey there! :)</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ex ab quasi quidem quia quam, hic eius eligendi sapiente dignissimos vitae est laboriosam incidunt voluptate ipsa exercitationem commodi consequatur error?</p>
+        </div>
+    </div>
+
+    <div class="close-button" onclick="windowDisplay('AboutWindow', false)">
+        x
+    </div>
+</div>
+
+<!-- ====================== Project Folder ====================== -->
+<div class="window" id="TestWindow">
+    <div class="title-bar">
+        <i class="fa-solid fa-folder"></i>
+        <p> Project Folder </p>
+    </div>
+
+    <div id="fileExplorerTab" style="margin-top: 0.25em; margin-bottom: 0.25em;">
+        <p>
+          <span>File</span>
+          <span>Edit</span>
+          <span>Object</span>
+          <span>Type</span>
+        </p>
+    </div>
+
+    <div class="content" style="border-top: 3px solid #363531;">
+        <!-- folders icons row 1 -->
+        <div class="fileExplorerRow" style="flex:25%;">
+          <div class="fileExplorerColumn">
+            <img src="images/Strykk.png" alt="Test Folder" onmouseover="this.src='images/Strykk2.png';" onmouseout="this.src='images/Strykk.png';" onclick="windowDisplay('strykkWindow', true)"/>
+            <p>Strykk</p>
+          </div>
+
+          <div class="fileExplorerColumn">
+            <img src="images/giffgaff.png" alt="Test Folder" onmouseover="this.src='images/giffgaff2.png';" onmouseout="this.src='images/giffgaff.png';"/>
+            <p>giffgaff</p>
+          </div>
+
+          <div class="fileExplorerColumn">
+            <img src="images/ffc.png" alt="Test Folder" onmouseover="this.src='images/ffc2.png';" onmouseout="this.src='images/ffc.png';"/>
+            <p>FFC App</p>
+          </div>
+
+          <div class="fileExplorerColumn">
+            <img src="images/frogcast.png" alt="Test Folder" onmouseover="this.src='images/frogcast2.png';" onmouseout="this.src='images/frogcast.png';"/>
+            <p>Frogcast</p>
+          </div>
+        </div>
+
+        <!-- folders icons row 2  -->
+        <div class="fileExplorerRow" style="flex:75%;">
+          <div class="fileExplorerColumn">
+            <img src="images/folder.png" alt="Test Folder" />
+            <p>Folder 5</p>
+          </div>
+
+          <div class="fileExplorerColumn">
+            <img src="images/folder.png" alt="Test Folder" />
+            <p>Folder 6</p>
+          </div>
+
+        </div>
+      </div>
+
+    <div class="close-button" onclick="windowDisplay('TestWindow', false)">
+        x
+    </div>
+</div>
+<!-- ====================== Music Player ====================== -->
+<div class="window" id="epicWindow">
+    <div class="title-bar">
+        <i class="fa-solid fa-music"></i>
+        <p>Music Player</p>
+    </div>
+
+    <div class="content">
+        <main id="widget">
+          <img id="albumArt" src="https://via.placeholder.com/195" alt="Album Art Placeholder" style="text-align: center;">
+          <p id="track" style="font-size: 1.1em; padding-top: 0.25em;">Loading...</p>
+          <p id="artist" style="font-size: 0.75em; padding-top: 0.25em;">Loading...</p>
+        </main>
+
+        <div class="progbar" style="padding: 1em 0em .75em 0em;">
+          <div class="progbarline" style="background: linear-gradient(90deg, #363531 25%, #D6D1C4 25%); height: 2px; position: relative;">
+            <div class="progbarcircle" style="display: inline-block; width: 0.75em; height: 0.75em; background-color: #363531; border-radius: 50%; position: absolute; top: calc(50% - 0.375em); left: calc(25% - 0.375em);"></div>
+          </div>
+        </div>
+
+        <div class="musicplayerctrl" style=" display: flex; justify-content: space-between; align-items: center;">
+          <i class="fa-solid fa-shuffle" style="font-size: 0.75em;"></i>
+          <i class="fa-solid fa-backward-fast" style="padding-left: 1em;"></i>
+          <i class="fa-solid fa-circle-play" style="font-size: 3em;"></i>
+          <i class="fa-solid fa-forward-fast" style="padding-right: 1em;"></i>
+          <i class="fa-solid fa-repeat" style="font-size: 0.75em;"></i>
+        </div>
+    </div>
+
+    <div class="close-button" onclick="windowDisplay('epicWindow', false)">
+        x
+    </div>
+</div>
+
+<div class="window" id="strykkWindow">
+  <div class="title-bar">
+    <i class="fa-solid fa-folder"></i>
+      <p>Projects > Strykk</p>
+  </div>
+
+  <div class="content">
+    <img src="images/strykk/Free Three Subway Station Poster Mockup2.png" style="height: 100%; width: 100%;">
+    <div style="display:flex">
+      <img src="images/strykk/Menu in Hands Mockup cropped.png" style="height: 100%; width: 100%;">
+    </div>
+    <div style="display:flex">
+      <img src="images/strykk/sims1.png" style="height: 100%;">
+      <img src="images/strykk/sims2.png" style="height: 100%;">
+    </div>
+  </div>
+
+  <div class="close-button" onclick="windowDisplay('strykkWindow', false)">
+      x
+  </div>
+</div>
+
+<!-- ====================== navbar ====================== -->
+
+
+<div class="navbar">
+
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a><img src="images/csp.png"></a></li>
+    <li><a><img src="images/figma.png"></a></li>
+    <li><a><img src="images/obsidian.png"></a></li>
+    <li><a><img src="images/pr.png"></a></li>
+    <li><a><img src="images/ps.png"></a></li>
+    <li><a><img src="images/vscode.png"></a></li>
+
+    <div id="navbarright">
+      <li><a>
+            <i class="fa-brands fa-linkedin" style="padding-right:0.25em;"></i>
+            <i class="fa-solid fa-envelope" style="padding-right:0.25em;"></i>
+            <i class="fa-brands fa-instagram" style="padding-right:0.25em;"></i>
+          <div id="time"></div>
+      </a></li>
+    </div>
+
+  </ul>
+</div>
+
+</body>
+</html>
+
+
