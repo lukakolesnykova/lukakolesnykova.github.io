@@ -1,8 +1,31 @@
 
 /* Defaults */
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #D6D1C4 #F2ECDE;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #F2ECDE;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #D6D1C4;
+    border-radius: 10px;
+    border: 3px none #F2ECDE;
+  }
+
+
 body {
-    background-image: url('/images/bg.png'); /* Path to your image */
+    background-image: url('/images/bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -63,14 +86,20 @@ p {
     top: 10vh;
     left: 10vw;
     display: none;
-    min-width: 200px;
-    max-width: 650px; /* Set maximum width */
-    max-height:  800px; /* Set maximum height */
+    min-width: 10vw;
+    max-width: 50vw; 
+    max-height: 80vh; 
     background-color: #F2ECDE;
     border: 3px solid #363531;
     border-radius: 10px;
     box-shadow: 8px 8px 0px 0px #363531;
 }
+
+@media screen and (max-width: 800px) {
+    .window {
+        max-width: 85vw;
+    }
+  }
 
 /*.textbox {
     width: 10vw;
@@ -90,7 +119,7 @@ p {
     float: left;
     color: #363531;
     margin: auto;
-    margin-right: .4em;
+    margin-right: .5em;
 }
     
 .close-button {
@@ -104,7 +133,7 @@ p {
 
 .content {
     padding: 10px;
-    max-height: 750px;
+    max-height: 60vh;
     overflow: auto;
 }
 

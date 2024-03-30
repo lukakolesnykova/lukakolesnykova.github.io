@@ -134,7 +134,7 @@ function update(previous, onSuccess) {
                 title: trackSrc.name,
                 artist: trackSrc.artist["#text"],
                 album: trackSrc.album["#text"],
-                image: trackSrc.image[2]["#text"] // Fetching the URL of the album art
+                image: trackSrc.image[3]["#text"] // Fetching the URL of the album art
             };
 
             // compare old vs new
