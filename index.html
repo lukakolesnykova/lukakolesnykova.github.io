@@ -20,12 +20,12 @@
 
 <!-- ====================== Desktop Icons ====================== -->
 <div class="Desktop-Left">
-    <div class="desktop-icons" onclick="windowDisplay('AboutWindow', true)">
+    <div class="desktop-icons" onclick="windowDisplay('aboutWindow', true)">
         <img src="images/computer.png" alt="Desktop Icon" class="icon" onmouseover="this.src='images/computer2.png';" onmouseout="this.src='images/computer.png';" />
         <div class="icon-text"><p>About</p></div>
     </div>
     
-    <div class="desktop-icons" onclick="windowDisplay('ProjectsWindow', true)">
+    <div class="desktop-icons" onclick="windowDisplay('projectsWindow', true)">
         <img src="images/folder.png" alt="Test Icon" class="icon" onmouseover="this.src='images/folder2.png';" onmouseout="this.src='images/folder.png';"/>
         <div class="icon-text"><p>Projects</p></div>
     </div>
@@ -45,10 +45,12 @@
         <div class="icon-text"><p>Languages</p></div>
     </div>
 
-    <!--<div class="desktop-icons" onclick="windowDisplay('', true)">
+    <!-- 
+    <div class="desktop-icons" onclick="windowDisplay('', true)">
       <img src="images/note.png" alt="epic Icon" class="icon" />
       <div class="icon-text"><p>Blog</p></div>
-    </div>-->
+    </div>
+  -->
     
 </div>
 
@@ -58,7 +60,7 @@
 </div>
 
 <!-- ====================== Languages / Messenger ====================== -->
-<div class="window textbox" id="language">
+<div class="window textbox" id="languageWindow">
     <div class="title-bar">
     <i class="fa-solid fa-message"></i>
     <p>Messenger</p>
@@ -95,7 +97,7 @@
     </div>
 </div>
 <!-- ====================== About Me ====================== -->
-<div class="window textbox" id="AboutWindow">
+<div class="window textbox" id="aboutWindow">
     <div class="title-bar">
     <i class="fa-solid fa-user"></i>
     <p>About Me</p>
@@ -111,13 +113,13 @@
         </div>
     </div>
 
-    <div class="close-button" onclick="windowDisplay('AboutWindow', false)">
+    <div class="close-button" onclick="windowDisplay('aboutWindow', false)">
         x
     </div>
 </div>
 
 <!-- ====================== Project Folder ====================== -->
-<div class="window" id="ProjectsWindow">
+<div class="window" id="projectsWindow">
     <div class="title-bar">
         <i class="fa-solid fa-folder"></i>
         <p> Project Folder </p>
@@ -171,7 +173,7 @@
         </div>
       </div>
 
-    <div class="close-button" onclick="windowDisplay('ProjectsWindow', false)">
+    <div class="close-button" onclick="windowDisplay('projectsWindow', false)">
         x
     </div>
 </div>
@@ -405,8 +407,8 @@
   <div class="dropup">
   <button class="dropbtn"><p>Start</p></button>
     <div class="dropup-content">
-      <a onclick="windowDisplay('AboutWindow', true)"><p>About</p></a>
-      <a onclick="windowDisplay('ProjectsWindow', true)"><p>Projects</p></a>
+      <a onclick="windowDisplay('aboutWindow', true)"><p>About</p></a>
+      <a onclick="windowDisplay('projectsWindow', true)"><p>Projects</p></a>
       <a onclick="windowDisplay('galleryWindow', true)"><p>Gallery</p></a>
       <a onclick="windowDisplay('musicWindow', true)"><p>Music</p></a>
       <a onclick="windowDisplay('languageWindow', true)">Languages</a>

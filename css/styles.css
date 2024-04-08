@@ -93,7 +93,7 @@ p {
     display: none;
     min-width: 10vw;
     max-width: 50vw; 
-    max-height: 80vh; 
+    max-height: 75vh; 
     background-color: #F2ECDE;
     border: 3px solid #363531;
     border-radius: 10px;
@@ -397,14 +397,15 @@ cursor: pointer;
     background-color: #f1f1f1;
     min-width: 160px;
     z-index: 1;
-  }
+}
 
-  .dropup-content a {
+.dropup-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+    cursor: pointer;
+}
 
   .dropup-content a:hover {background-color: #ddd}
 
