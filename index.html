@@ -25,7 +25,7 @@
         <div class="icon-text"><p>About</p></div>
     </div>
     
-    <div class="desktop-icons" onclick="windowDisplay('TestWindow', true)">
+    <div class="desktop-icons" onclick="windowDisplay('ProjectsWindow', true)">
         <img src="images/folder.png" alt="Test Icon" class="icon" onmouseover="this.src='images/folder2.png';" onmouseout="this.src='images/folder.png';"/>
         <div class="icon-text"><p>Projects</p></div>
     </div>
@@ -35,20 +35,20 @@
       <div class="icon-text"><p>Gallery</p></div>
     </div>
         
-    <div class="desktop-icons" onclick="windowDisplay('epicWindow', true)">
+    <div class="desktop-icons" onclick="windowDisplay('musicWindow', true)">
         <img src="images/music.png" alt="epic Icon" class="icon" />
         <div class="icon-text"><p>Music</p></div>
     </div>
         
-    <div class="desktop-icons" onclick="windowDisplay('language', true)">
+    <div class="desktop-icons" onclick="windowDisplay('languageWindow', true)">
         <img src="images/msg.png" alt="epic Icon" class="icon" />
         <div class="icon-text"><p>Languages</p></div>
     </div>
 
-    <div class="desktop-icons" onclick="windowDisplay('', true)">
+    <!--<div class="desktop-icons" onclick="windowDisplay('', true)">
       <img src="images/note.png" alt="epic Icon" class="icon" />
       <div class="icon-text"><p>Blog</p></div>
-    </div>
+    </div>-->
     
 </div>
 
@@ -90,7 +90,7 @@
 
   </div>
 
-    <div class="close-button" onclick="windowDisplay('language', false)">
+    <div class="close-button" onclick="windowDisplay('languageWindow', false)">
         x
     </div>
 </div>
@@ -117,7 +117,7 @@
 </div>
 
 <!-- ====================== Project Folder ====================== -->
-<div class="window" id="TestWindow">
+<div class="window" id="ProjectsWindow">
     <div class="title-bar">
         <i class="fa-solid fa-folder"></i>
         <p> Project Folder </p>
@@ -146,7 +146,7 @@
           </div>
 
           <div class="fileExplorerColumn">
-            <img src="images/ffc.png" alt="Test Folder" onmouseover="this.src='images/ffc2.png';" onmouseout="this.src='images/ffc.png';"/>
+            <img src="images/ffc.png" alt="Test Folder" onmouseover="this.src='images/ffc2.png';" onmouseout="this.src='images/ffc.png';" onclick="windowDisplay('ffcWindow', true)"/>
             <p>FFC App</p>
           </div>
 
@@ -164,19 +164,19 @@
           </div>
 
           <div class="fileExplorerColumn">
-            <img src="images/folder.png" alt="Test Folder" />
-            <p>Folder 6</p>
+            <img src="images/innocent.png" alt="Test Folder" onmouseover="this.src='images/innocent2.png';" onmouseout="this.src='images/innocent.png';"/>
+            <p>Innocent</p>
           </div>
 
         </div>
       </div>
 
-    <div class="close-button" onclick="windowDisplay('TestWindow', false)">
+    <div class="close-button" onclick="windowDisplay('ProjectsWindow', false)">
         x
     </div>
 </div>
 <!-- ====================== Music Player ====================== -->
-<div class="window" id="epicWindow">
+<div class="window" id="musicWindow">
     <div class="title-bar">
         <i class="fa-solid fa-music"></i>
         <p> I'm listening to...</p>
@@ -204,7 +204,7 @@
         </div>
     </div>
 
-    <div class="close-button" onclick="windowDisplay('epicWindow', false)">
+    <div class="close-button" onclick="windowDisplay('musicWindow', false)">
         x
     </div>
 </div>
@@ -219,8 +219,17 @@
     <div class="imgcontainer">
       <img src="images/strykk/Free Three Subway Station Poster Mockup2.png">
     </div>
+    <p class="contentText">Collaborative project with Ivy Samuel. Non-alcoholic spirits tend to, well, lack some spirit. When Strykk, an emerging non-alcoholic spirits brand, approached us, we saw an opportunity to add some fun to staying sober during Dry January. It's time to discover your personalized Strykk cocktail – because you are what you drink! Take our personality quizzes, join Strykk Saturday events to get a cocktail reading at your favorite bars, and even join the fun virtually with The Sims 4, letting your Sims find their own Strykk cocktail! </p>
     <div class="imgcontainer">
       <img src="images/strykk/Menu in Hands Mockup cropped.png">
+    </div>
+    <div class="imgcontainer">
+      <img src="images/strykk/quiz.png">
+    </div>
+    <div class="imgcontainer">
+      <img src="images/strykk/Untitled-1.gif">
+      <img src="images/strykk/final0001.png" style="object-fit: cover;">
+      <img src="images/strykk/receipt.png" style="object-fit: cover;">
     </div>
     <div class="imgcontainer">
       <img src="images/strykk/box.png">
@@ -229,6 +238,7 @@
     <div class="imgcontainer">
       <img src="images/strykk/sims 4.png">
     </div>
+
   </div>
 
   <div class="close-button" onclick="windowDisplay('strykkWindow', false)">
@@ -243,13 +253,14 @@
   </div>
 
   <div class="content">
-
     <div class="imgcontainer">
-      <img src="images/giffgaff/AppBlue.png">
-      <img src="images/giffgaff/AppPurple.png">
-      <img src="images/giffgaff/AppRed.png">
-      <img src="images/giffgaff/AppMidnight.png">
-      <img src="images/giffgaff/AppStarlight.png">
+      <img src="images/giffgaff/slide1.png">
+    </div>
+    <div class="imgcontainer">
+      <img src="images/giffgaff/slide2.png">
+    </div>
+    <div class="imgcontainer">
+      <img src="images/giffgaff/datingapp.png">
     </div>
 
     <div class="imgcontainer">
@@ -257,7 +268,7 @@
     </div>
 
     <div class="imgcontainer">
-      <img src="images/giffgaff/relovedisland.png">
+      <img src="images/giffgaff/slide5.png">
     </div>
 
     <div class="imgcontainer">
@@ -267,10 +278,32 @@
     <div class="imgcontainer">
       <img src="images/giffgaff/speeddating2.png">
     </div>
+    <div class="imgcontainer">
+      <img src="images/giffgaff/slide8.png">
+    </div>
 
   </div>
 
   <div class="close-button" onclick="windowDisplay('giffgaffWindow', false)">
+      x
+  </div>
+</div>
+
+<div class="window" id="ffcWindow">
+  <div class="title-bar">
+    <i class="fa-solid fa-folder"></i>
+      <p>Projects > Falmouth Food Co-op</p>
+  </div>
+
+  <div class="content">
+
+    <div class="imgcontainer">
+      <img src="images/ffc/apppreview.png">
+    </div>
+
+  </div>
+
+  <div class="close-button" onclick="windowDisplay('ffcWindow', false)">
       x
   </div>
 </div>
@@ -368,7 +401,18 @@
 </div>-->
 
 <div class="navbar">
-  <a href="#" class="navbarStart">Start</a>
+
+  <div class="dropup">
+  <button class="dropbtn"><p>Start</p></button>
+    <div class="dropup-content">
+      <a onclick="windowDisplay('AboutWindow', true)"><p>About</p></a>
+      <a onclick="windowDisplay('ProjectsWindow', true)"><p>Projects</p></a>
+      <a onclick="windowDisplay('galleryWindow', true)"><p>Gallery</p></a>
+      <a onclick="windowDisplay('musicWindow', true)"><p>Music</p></a>
+      <a onclick="windowDisplay('languageWindow', true)">Languages</a>
+    </div>
+  </div>
+
     <ul class="navbarMenu">
       <li><a><img src="images/csp.png"></a></li>
       <li><a><img src="images/figma.png"></a></li>
@@ -381,5 +425,3 @@
 
 </body>
 </html>
-
-

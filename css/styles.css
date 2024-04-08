@@ -148,10 +148,15 @@ p {
     margin-bottom: 0.75em;
   }
   
-  .imgcontainer img {
+.imgcontainer img {
     width: 100%;
+}
 
-  }
+.contentText {
+    margin: 2.5em;
+    text-align: center;
+}
+
 
 /* Last.fm Widget Styling */
 #widget {
@@ -245,6 +250,7 @@ p {
     
 .fileExplorerColumn img {
 height: 8vh;
+cursor: pointer;
 }
 
 .gallery {
@@ -377,6 +383,8 @@ height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     padding-left:20px;
     padding-right:20px;
     border: none;
@@ -385,7 +393,7 @@ height: 8vh;
 .dropup-content {
     display: none;
     position: absolute;
-    bottom: 45px;
+    bottom: 50px;
     background-color: #f1f1f1;
     min-width: 160px;
     z-index: 1;
