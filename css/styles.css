@@ -37,6 +37,11 @@ body {
     font-family: "Fredoka", sans-serif;
 }
 
+button {
+    font-size: 100%;
+    font-family: "Fredoka", sans-serif;
+}
+
 html,
 body,
 ul,
@@ -282,7 +287,7 @@ height: 8vh;
 }
   
 
-/* Navbar Styling */
+/* Navbar Styling 
 
 .navbar ul {
   list-style-type: none;
@@ -319,7 +324,6 @@ height: 8vh;
     user-select: none; 
 }
 
-  
 .active {
     background-color: #363531;
     color: #F2ECDE;
@@ -330,4 +334,76 @@ height: 8vh;
 #time {
     float:right;
     padding-left: .5em;
+}*/
+
+.navbar {
+    background-color: #F2ECDE;
+    border-top: 3px solid #363531;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    
 }
+
+.navbarMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    float: left;
+    color: #363531;
+}
+
+.navbar li a {
+    padding-left: 1em;
+    padding-right: 0.5em;
+
+}
+
+.navbar li a img {
+    max-height: 20px;
+    padding-top: .8em;
+    padding-bottom: .5em;
+}
+
+.dropbtn {
+    background-color: #363531;
+    color: #F2ECDE;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:20px;
+    padding-right:20px;
+    border: none;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 45px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropup-content a:hover {background-color: #ddd}
+
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
