@@ -46,7 +46,13 @@ html,
 body,
 ul,
 ol,
-p {
+p
+{
+  margin: 0;
+  padding: 0;
+}
+
+a {
   margin: 0;
   padding: 0;
 }
@@ -321,9 +327,6 @@ cursor: pointer;
     max-height: 16px;
 }
 
-#navbarright {
-    float:right;
-}
   
 .navbar li a:hover:not(.active):not(#navbarright a) {
     background-color: #363531;
@@ -335,12 +338,8 @@ cursor: pointer;
     color: #F2ECDE;
     text-decoration: none;
     border-right: 3px solid #363531;
-}
-
-#time {
-    float:right;
-    padding-left: .5em;
 }*/
+
 
 .navbar {
     background-color: #F2ECDE;
@@ -350,6 +349,20 @@ cursor: pointer;
     width: 100%;
     display: flex;
     
+}
+
+#navbarright {
+    position: absolute;
+    right: 0;
+    padding-top: .8em;
+    padding-bottom: .5em;
+    padding-right: 1.5em;
+    text-decoration: none;
+}
+
+#time {
+    float:right;
+    padding-left: 0.5em;
 }
 
 .navbarMenu {
@@ -364,7 +377,7 @@ cursor: pointer;
     color: #363531;
 }
 
-.navbar li a {
+.navbarMenu li a {
     padding-left: 1em;
     padding-right: 0.5em;
 
@@ -416,3 +429,4 @@ cursor: pointer;
   .dropup:hover .dropbtn {
     background-color: #2980B9;
   }
+
