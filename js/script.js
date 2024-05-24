@@ -178,8 +178,6 @@ function updateTime() {
     document.getElementById("time").innerHTML = timeString;
 }
 
-// Update the time every second
 setInterval(updateTime, 1000);
 
-// Initial update
 updateTime();

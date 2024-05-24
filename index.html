@@ -31,17 +31,17 @@
     </div>
 
     <div class="desktop-icons" onclick="windowDisplay('galleryWindow', true)">
-      <img src="images/gallery.png" alt="gallery Icon" class="icon"/>
+      <img src="images/gallery.png" alt="gallery Icon" class="icon" onmouseover="this.src='images/gallery2.png';" onmouseout="this.src='images/gallery.png';"/>
       <div class="icon-text"><p>Gallery</p></div>
     </div>
         
     <div class="desktop-icons" onclick="windowDisplay('musicWindow', true)">
-        <img src="images/music.png" alt="epic Icon" class="icon" />
+        <img src="images/music.png" alt="epic Icon" class="icon" onmouseover="this.src='images/music2.png';" onmouseout="this.src='images/music.png';"/>
         <div class="icon-text"><p>Music</p></div>
     </div>
         
     <div class="desktop-icons" onclick="windowDisplay('languageWindow', true)">
-        <img src="images/msg.png" alt="epic Icon" class="icon" />
+        <img src="images/msg.png" alt="epic Icon" class="icon" onmouseover="this.src='images/msg2.png';" onmouseout="this.src='images/msg.png';"/>
         <div class="icon-text"><p>Languages</p></div>
     </div>
 
@@ -69,24 +69,24 @@
     <div class="content">
     <div id="messenger">
       <div class="message" style="margin-bottom:0.75em;">
-        <img class="pfp" style="margin-right: 0.5em;" src="https://via.placeholder.com/40" alt="pfp1">
+        <img class="pfp" style="margin-right: 0.5em;" src="images/uk.png" alt="pfp1">
         <span>Hello there! 🇬🇧</span>
       </div>
 
       <div class="message" style="margin-left:2em; margin-bottom:0.75em;">
-        <img class="pfp" style="margin-left: 0.5em;" src="https://via.placeholder.com/40" alt="pfp2">
+        <img class="pfp" style="margin-left: 0.5em;" src="images/ru.png" alt="pfp2">
         <span style="order: -1;">Привет! Я говорю по-русски! 🇷🇺</span>
       </div>
 
       <div class="message">
-        <img class="pfp" style="margin-right: 0.5em;" src="https://via.placeholder.com/40" alt="pfp1">
+        <img class="pfp" style="margin-right: 0.5em;" src="images/jp.png" alt="pfp1">
         <span>日本語を勉強している 🇯🇵</span>
       </div>
     </div>
 
       <div class="send-message">
-          <input type="text" placeholder="psst hello there!">
-        <i class="fa-solid fa-paper-plane"></i>
+          <input type="text" placeholder="I speak English, Russian and learning Japanese!">
+        <i class="fa-solid fa-paper-plane" style="color: #363531;"></i>
     </div>
 
 
@@ -104,13 +104,15 @@
     </div>
 
     <div class="content" id="aboutme">
-      <div class="aboutmeLeft"><img src="https://via.placeholder.com/250"/></div>
-      <div class="aboutmeRight">
-          <h1>Hey there! I'm Luka!</h1>
-          <p>I'm a tech-savvy creative with a passion of blending the best of both analog and digital worlds within advertising. Fueled by creativity, curiosity, and one too many cuppas, I'm all about crafting memorable campaigns within a variety of programs and mediums.</p>
+      <img src="https://via.placeholder.com/250" alt="Profile Image" class="aboutmeImage">
+      <div class="aboutmeText">
+          <h1>Hello World!</h1>
+          <p>I'm Luka, a tech-passionate creative. Fueled by creativity, curiosity, and one too many cuppas, I'm all about crafting memorable ad campaigns and experimenting with a variety of programs and mediums.</p>
           <br>
           <p>When I'm not diving into the digital world, you can find me journalling, doodling and chilling at Gylly beach. Oh, and I'm always on the hunt for new tunes and adding to my ever-expanding CD collection :-)</p>
           <br>
+          <div class="aboutmeButtons"><a href="mailto:lukakolesnykova@protonmail.com"><button style="margin-right:0.5em;">Email</button></a>
+          <a href="https://www.linkedin.com/in/luka-ko/"><button>LinkedIn</button></a></div>
         </div>
     </div>
 
@@ -149,12 +151,12 @@
           </div>
 
           <div class="fileExplorerColumn">
-            <img src="images/ffc.png" alt="Test Folder" onmouseover="this.src='images/ffc2.png';" onmouseout="this.src='images/ffc.png';" onclick="windowDisplay('ffcWindow', true)"/>
+            <img src="images/ffc.png" alt="Falmouth Food Coop" onmouseover="this.src='images/ffc2.png';" onmouseout="this.src='images/ffc.png';" onclick="windowDisplay('ffcWindow', true)"/>
             <p>FFC App</p>
           </div>
 
           <div class="fileExplorerColumn">
-            <img src="images/frogcast.png" alt="Test Folder" onmouseover="this.src='images/frogcast2.png';" onmouseout="this.src='images/frogcast.png';"/>
+            <img src="images/frogcast.png" alt="Frogcast" onmouseover="this.src='images/frogcast2.png';" onmouseout="this.src='images/frogcast.png';" onclick="windowDisplay('frogcastWindow', true)"/>
             <p>Frogcast</p>
           </div>
         </div>
@@ -192,18 +194,18 @@
           <p id="artist" style="font-size: 0.75em; padding-top: 0.25em;">Loading...</p>
         </main>
 
-        <div class="progbar" style="padding: 1em 0em .75em 0em;">
+        <div class="progbar" style="padding: 1em 0em .75em 0em; color: #363531;"">
           <div class="progbarline" style="background: linear-gradient(90deg, #363531 25%, #D6D1C4 25%); height: 2px; position: relative;">
             <div class="progbarcircle" style="display: inline-block; width: 0.75em; height: 0.75em; background-color: #363531; border-radius: 50%; position: absolute; top: calc(50% - 0.375em); left: calc(25% - 0.375em);"></div>
           </div>
         </div>
 
         <div class="musicplayerctrl" style=" display: flex; justify-content: space-between; align-items: center;">
-          <i class="fa-solid fa-shuffle" style="font-size: 0.75em;"></i>
-          <i class="fa-solid fa-backward-fast" style="padding-left: 1em;"></i>
-          <i class="fa-solid fa-circle-play" style="font-size: 3em;"></i>
-          <i class="fa-solid fa-forward-fast" style="padding-right: 1em;"></i>
-          <i class="fa-solid fa-repeat" style="font-size: 0.75em;"></i>
+          <i class="fa-solid fa-shuffle" style="font-size: 0.75em; color: #363531;"></i>
+          <i class="fa-solid fa-backward-fast" style="padding-left: 1em; color: #363531;"></i>
+          <i class="fa-solid fa-circle-play" style="font-size: 3em; color: #363531;"></i>
+          <i class="fa-solid fa-forward-fast" style="padding-right: 1em; color: #363531;"></i>
+          <i class="fa-solid fa-repeat" style="font-size: 0.75em; color: #363531;"></i>
         </div>
     </div>
 
@@ -220,27 +222,36 @@
 
   <div class="content">
     <div class="imgcontainer">
-      <img src="images/strykk/Free Three Subway Station Poster Mockup2.png">
+      <img src="images/strykk/posterMockup.webp">
     </div>
-    <p class="contentText">Collaborative project with Ivy Samuel. Non-alcoholic spirits tend to, well, lack some spirit. When Strykk, an emerging non-alcoholic spirits brand, approached us, we saw an opportunity to add some fun to staying sober during Dry January. It's time to discover your personalized Strykk cocktail – because you are what you drink! Take our personality quizzes, join Strykk Saturday events to get a cocktail reading at your favorite bars, and even join the fun virtually with The Sims 4, letting your Sims find their own Strykk cocktail! </p>
+    <p class="contentText"><sup>Collaborative project with Ivy Samuel.</sup></p>
+    <p class="contentText"><b>Problem:</b> Non-alcoholic spirits, including Strykk, often don't taste great on their own. This negative reputation around taste can deter potential consumers.</p>
+    <p class="contentText"><b>Insight:</b> People enjoy well-made drinks and the experience of discovering new cocktails. The real enjoyment of spirits, alcoholic or not, comes from how they are mixed. By focusing on cocktails, Strykk can turn its perceived weakness into a strength.</p>
+    <p class="contentText"><b>Solution:</b> Adding some "spirit" to Dry January by letting people discover their personalized Strykk cocktail – because you are what you drink!</p>
+    
     <div class="imgcontainer">
-      <img src="images/strykk/Menu in Hands Mockup cropped.png">
+      <img src="images/strykk/strykkMenu.webp">
     </div>
+    <p class="contentText"><sup>Introducing a new Strykk cocktail menu, loosely inspired by the Myers–Briggs personalities.</sup></p>
     <div class="imgcontainer">
-      <img src="images/strykk/quiz.png">
+      <img src="images/strykk/quiz.webp">
     </div>
+    <p class="contentText"><sup>Launch of ads to showcase the new menu, by inviting people to take an online quiz to help people discover their personalized Strykk cocktail.</sup></p>
     <div class="imgcontainer">
-      <img src="images/strykk/Untitled-1.gif">
-      <img src="images/strykk/final0001.png" style="object-fit: cover;">
-      <img src="images/strykk/receipt.png" style="object-fit: cover;">
+      <img src="images/strykk/vendingMachine360.gif" style="width:33%">
+      <img src="images/strykk/vendingMachine1.webp" style="width:33%">
+      <img src="images/strykk/receipt.webp" style="width:33%">
     </div>
+    <p class="contentText"><sup>Installing vending machines in public places where people can take the quiz and sample their cocktail and provide receipts to allow reordering of your cocktail in participating bars.</sup></p>
     <div class="imgcontainer">
-      <img src="images/strykk/box.png">
-      <img src="images/strykk/Kit Contains.png">
+      <img src="images/strykk/box.webp" style="width:50%">
+      <img src="images/strykk/kitContents.webp" style="width:50%">
     </div>
+    <p class="contentText"><sup>Offering online Strykk cocktail boxes, allowing people to make their Strykk cocktail from home.</sup></p>
     <div class="imgcontainer">
-      <img src="images/strykk/sims 4.png">
+      <img src="images/strykk/sims 4.webp">
     </div>
+    <p class="contentText"><sup>Integrate Strykk cocktails into The Sims 4, allowing players to host in-game Strykk events and participate in virtual cocktail readings.</sup></p>
 
   </div>
 
@@ -248,6 +259,8 @@
       x
   </div>
 </div>
+
+<!-- ====================== giffgaffWindow ====================== -->
 
 <div class="window" id="giffgaffWindow">
   <div class="title-bar">
@@ -292,7 +305,7 @@
   </div>
 </div>
 
-<!-- ====================== projectsWindow ====================== -->
+<!-- ====================== ffcWindow ====================== -->
 
 <div class="window" id="ffcWindow">
   <div class="title-bar">
@@ -306,13 +319,72 @@
       <img src="images/ffc/apppreview.png">
     </div>
 
+    <p class="contentText"><b>Brief:</b> The Falmouth Food Co-Op is a community run online grocery store, with products from local non-industrial farmers. During a talk, they mentioned people are reluctant to place orders due to the difficulty of using their website. However, they stated they were unable to remake their website due to the backend.</p>
+    <p class="contentText"><b>Solution:</b> Creating an easy to use app prototype to simplify the order process.</p>
+
     <div class="imgcontainer">
-      <img src="images/ffc/Group 1.png">
+      <img src="images/ffc/Frame 738001045 (2).png">
     </div>
+    <p class="contentText"><sup></sup></p>
+
+    <div class="imgcontainer">
+      <img src="images/ffc/wireframe.png">
+    </div>
+    <p class="contentText"><sup></sup></p>
+
+    <div class="imgcontainer">
+      <img src="images/ffc/screenshots.png">
+    </div>
+    <p class="contentText"><sup></sup></p>
+
 
   </div>
 
   <div class="close-button" onclick="windowDisplay('ffcWindow', false)">
+      x
+  </div>
+</div>
+
+<!-- ====================== frogcastWindow ====================== -->
+
+<div class="window" id="frogcastWindow">
+  <div class="title-bar">
+    <i class="fa-solid fa-folder"></i>
+      <p>Projects > Frogcast (Kids Weather App)</p>
+  </div>
+
+  <div class="content">
+
+    <div class="imgcontainer">
+      <img src="images/frogcast/appImgs.png">
+    </div>
+
+    <p class="contentText"><b>Brief:</b> Create a weather app prototype suitable for kids within a week using Marvel.</p>
+
+    <div class="imgcontainer">
+      <img src="images/frogcast/wireframe.png">
+    </div>
+    <p class="contentText"><sup>Lo-fi wireframe laying out the app screens and app structure.</sup></p>
+
+    <div class="imgcontainer">
+      <img src="images/frogcast/conceptDaily.png">
+    </div>
+    <p class="contentText"><sup>Concept sketches for the main home screen.</sup></p>
+
+    <div class="imgcontainer">
+      <img src="images/frogcast/conceptDressup.png">
+    </div>
+    <p class="contentText"><sup>Concept sketches for the Dress Up minigame.</sup></p>
+
+    <div class="imgcontainer">
+      <img src="images/frogcast/conceptFrog.png">
+    </div>
+    <p class="contentText"><sup>Concept sketches for the frog character, exploring different proportions and shapes.</sup></p>
+
+
+  </div>
+
+  <div class="close-button" onclick="windowDisplay('frogcastWindow', false)">
       x
   </div>
 </div>
@@ -434,7 +506,7 @@
 
       <div id="navbarright">
             <a href="https://www.linkedin.com/in/luka-ko/" target="_blank"><i class="fa-brands fa-linkedin" style="padding-left:0.5em;"></i></a>
-            <a href="mailto:lukakolesnykova@pm.me" target="_blank"><i class="fa-solid fa-envelope" style="padding-left:0.5em;"></i></a>
+            <a href="mailto:lukakolesnykova@protonmail.com" target="_blank"><i class="fa-solid fa-envelope" style="padding-left:0.5em;"></i></a>
             <div id="time"></div>
       </div>
 

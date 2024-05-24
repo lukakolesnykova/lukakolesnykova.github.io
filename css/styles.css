@@ -151,7 +151,6 @@ a {
 .imgcontainer {
     display: flex;
     flex-direction: row;
-    margin-bottom: 0.75em;
   }
   
 .imgcontainer img {
@@ -159,7 +158,7 @@ a {
 }
 
 .contentText {
-    margin: 2.5em;
+    margin: 1em;
     text-align: center;
 }
 
@@ -196,9 +195,10 @@ a {
 }
 
 .message span{
-    background-color: #D6D1C4;
+    background-color: #363531;
     padding: 10px 15px;
     border-radius: 15px;
+    color: #ddd;
 }
 
 .pfp{
@@ -230,29 +230,53 @@ a {
 
 #aboutme {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:1em;
+
 }
 
-.aboutmeLeft img{
-    flex: 50%;
+.aboutmeImage {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
 }
 
-.aboutmeRight{
-    flex: 50%
+.aboutmeText {
+    max-width: 500px;
 }
 
-@media screen and (max-width: 1040px) {
+@media (max-width: 1500px) {
     #aboutme {
-        text-align: center;
+        flex-direction: column;
     }
-    
-    .aboutmeLeft {
-        align-items:center;
-        width: 100%;
-    }
-  }
 
+    .aboutmeImage {
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+.aboutmeText button {
+    background-color: #363531;
+    border: none;
+    color: #D6D1C4;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+.aboutmeText button:hover{
+        background-color: #949087;
+        color: white;
+        cursor:pointer;
+}
 
 /* Projects Folder Styling */
 #fileExplorerTab {
@@ -318,47 +342,6 @@ cursor: pointer;
     }
 }
   
-
-/* Navbar Styling 
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #F2ECDE;
-  border-top: 3px solid #363531;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.navbar li {
-    float: left;
-    color: #363531;
-}
-
-.navbar li a {
-    display: block;
-    padding: 14px 16px;
-}
-
-.navbar li a img {
-    max-height: 16px;
-}
-
-  
-.navbar li a:hover:not(.active):not(#navbarright a) {
-    background-color: #363531;
-    user-select: none; 
-}
-
-.active {
-    background-color: #363531;
-    color: #F2ECDE;
-    text-decoration: none;
-    border-right: 3px solid #363531;
-}*/
 
 
 .navbar {
@@ -436,7 +419,7 @@ cursor: pointer;
 .dropup-content {
     display: none;
     position: absolute;
-    bottom: 45px;
+    bottom: 46px;
     background-color: #f1f1f1;
     min-width: 160px;
     z-index: 1;
