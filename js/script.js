@@ -121,7 +121,7 @@ let current;
 
 // Next, we call the last.fm API and pull a JSON response with our latest 1 track
 function update(previous, onSuccess) {
-    fetch(`http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${api}&format=json&limit=1`)
+    fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${api}&format=json&limit=1`)
         .then(response => response.json())
         .then(json => {
             if (!json.recenttracks) {
