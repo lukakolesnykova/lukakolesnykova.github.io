@@ -164,12 +164,7 @@
         <!-- folders icons row 2  -->
         <div class="fileExplorerRow" style="flex:75%;">
           <div class="fileExplorerColumn">
-            <img src="images/folder.png" alt="Test Folder" />
-            <p>Folder 5</p>
-          </div>
-
-          <div class="fileExplorerColumn">
-            <img src="images/innocent.png" alt="Test Folder" onmouseover="this.src='images/innocent2.png';" onmouseout="this.src='images/innocent.png';"/>
+            <img src="images/innocent.png" alt="Test Folder" onmouseover="this.src='images/innocent2.png';" onmouseout="this.src='images/innocent.png';" onclick="windowDisplay('innocentWindow', true)"/>
             <p>Innocent</p>
           </div>
 
@@ -307,6 +302,26 @@
 
 <!-- ====================== ffcWindow ====================== -->
 
+<div class="window" id="innocentWindow">
+  <div class="title-bar">
+    <i class="fa-solid fa-folder"></i>
+      <p>Projects > Innocent AR Filter</p>
+  </div>
+
+  <div class="content">
+    <div class="imgcontainer">
+      <img src="images/giffgaff/slide1.png">
+    </div>
+
+  </div>
+
+  <div class="close-button" onclick="windowDisplay('innocentWindow', false)">
+      x
+  </div>
+</div>
+
+<!-- ====================== ffcWindow ====================== -->
+
 <div class="window" id="ffcWindow">
   <div class="title-bar">
     <i class="fa-solid fa-folder"></i>
@@ -325,17 +340,16 @@
     <div class="imgcontainer">
       <img src="images/ffc/Frame 738001045 (2).png">
     </div>
-    <p class="contentText"><sup></sup></p>
+    <p class="contentText"><sup>App sitemap based on their current website, and simplifying it to better suit an app.</sup></p>
 
     <div class="imgcontainer">
       <img src="images/ffc/wireframe.png">
     </div>
-    <p class="contentText"><sup></sup></p>
+    <p class="contentText"><sup>Lo-fi wireframe & diagram for main app screens.</sup></p>
 
     <div class="imgcontainer">
       <img src="images/ffc/screenshots.png">
     </div>
-    <p class="contentText"><sup></sup></p>
 
 
   </div>
@@ -380,6 +394,16 @@
       <img src="images/frogcast/conceptFrog.png">
     </div>
     <p class="contentText"><sup>Concept sketches for the frog character, exploring different proportions and shapes.</sup></p>
+    
+    <div class="imgcontainer">
+      <img src="images/frogcast/Group 1.png">
+    </div>
+    <p class="contentText"><sup>Main app screens - loading screen, homepage and daily weather.</sup></p>
+    
+    <div class="imgcontainer">
+      <img src="images/frogcast/Group 2.png">
+    </div>
+    <p class="contentText"><sup>Dress up minigame, where kids have to dress the character in the appropriate clothing for the current weather in their area.</sup></p>
 
 
   </div>
@@ -419,7 +443,7 @@
       <div class="gallery-item">
         <figure>
           <video width="100%" controls>
-            <source src="images/gallery/nhs edited5.mp4" type="video/mp4"
+            <source src="images/gallery/nhs edited5.mp4" type="video/mp4">
           </video>
         </figure>
       </div>
@@ -436,7 +460,7 @@
       <div class="gallery-item">
         <figure>
           <video width="100%" controls>
-            <source src="images/gallery/ITV Skit.mp4" type="video/mp4"
+            <source src="images/gallery/ITV Skit.mp4" type="video/mp4">
           </video>
         </figure>
       </div>

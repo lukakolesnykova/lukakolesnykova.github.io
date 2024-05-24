@@ -441,6 +441,7 @@ cursor: pointer;
   }
 
   .dropup:hover .dropbtn {
-    background-color: #2980B9;
+    background-color: #949087;
+    color: white;
   }
 
