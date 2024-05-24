@@ -230,9 +230,29 @@ a {
 
 #aboutme {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
+.aboutmeLeft img{
+    flex: 50%;
+}
+
+.aboutmeRight{
+    flex: 50%
+}
+
+@media screen and (max-width: 1040px) {
+    #aboutme {
+        text-align: center;
+    }
+    
+    .aboutmeLeft {
+        align-items:center;
+        width: 100%;
+    }
+  }
+
 
 /* Projects Folder Styling */
 #fileExplorerTab {
@@ -362,7 +382,17 @@ cursor: pointer;
 
 #time {
     float:right;
-    padding-left: 0.5em;
+    padding-left: 1em;
+}
+
+@media screen and (max-width: 500px) {
+    #navbarright {
+      display:none;
+    }
+}
+
+#navbarright a {
+    color:#363531;
 }
 
 .navbarMenu {
@@ -406,14 +436,15 @@ cursor: pointer;
 .dropup-content {
     display: none;
     position: absolute;
-    bottom: 50px;
+    bottom: 45px;
     background-color: #f1f1f1;
     min-width: 160px;
     z-index: 1;
+    border-bottom: 3px solid #363531;
 }
 
 .dropup-content a {
-    color: black;
+    color:#363531;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
